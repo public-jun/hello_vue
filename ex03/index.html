@@ -1,0 +1,35 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- index.html                                         :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: jnakahod <jnakahod@student.42tokyo.jp>     +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2021/01/26 15:07:00 by jnakahod          #+#    #+#            -->
+<!-- Updated: 2021/01/26 15:44:54 by jnakahod         ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My first Vue app</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="app">
+    <p>{{ message }}</p>
+    <input type="text" v-model="message" />
+  </div>
+
+  <script>
+    var app = new Vue({
+      el: "#app",
+      data: {
+        message: "Hello Vue!"
+      }
+    });
+  </script>
+</body>
+</html>
